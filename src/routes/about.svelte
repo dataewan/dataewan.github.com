@@ -12,7 +12,11 @@
 </p>
 
 <p>
-  Currently my interests are around books, where ideas come from and trying to collect those ideas, and the effects that data has on society.
+  Currently my interests are around books, where ideas come from and trying to collect those ideas, the effects that data has in the real world, and what I can do to make those effects better.
+</p>
+
+<p>
+  I'm using this site to collect stories, write notes to myself, and provide a point that I can refer to
 </p>
 
 <style>
