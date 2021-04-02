@@ -12,6 +12,10 @@
     // posts will get a special layout
     return pagePath.match(/blog\/.*/);
   };
+
+  const isLandingPage = (pagePath) => {
+    return pagePath === "/"
+  }
 </script>
 
 <style>
@@ -25,15 +29,19 @@
   }
 </style>
 
-<Nav {segment} />
+{#if !isLandingPage(pagePath)}
 
-<main>
-  {#if isPost(pagePath)}
-    <PostHolder>
+  <Nav {segment} />
+  <main>
+    {#if isPost(pagePath)}
+      <PostHolder>
+        <slot />
+      </PostHolder>
+    {:else}
       <slot />
-    </PostHolder>
-  {:else}
-    <slot />
-  {/if}
-</main>
+    {/if}
+  </main>
 
+{:else}
+  <slot/>
+{/if}

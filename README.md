@@ -1,18 +1,10 @@
-# mdsvx blog
+My github pages.
 
-Based on [Sapper](https://sapper.svelte.dev/) and [mdsvex](https://mdsvex.pngwn.io/docs/)
+Blog template and instructions for creating a new one are here:
+
+https://github.com/dataewan/svelte-mdsvex-blog
 
 
-## Creating a new post
+# TODO
 
-
-Either create a new `.svx` file in `src/routes/blog`,
-or create a new directory in that directory and then create an `index.svx` file in there as well.
-
-## Detailed instructions
-
-I've created a few blog posts that describe the thought process to writing on this blog.
-I've deployed these on my github pages.
-
-http://dataewan.com/svelte-mdsvex-blog/
-
+[] overall styling. Particular attention to colours and fonts
