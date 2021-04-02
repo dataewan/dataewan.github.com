@@ -24,8 +24,15 @@
     max-width: 56em;
     background-color: white;
     padding: 2em;
-    margin: 0 auto;
+    margin-right: 20%;
     box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    main{
+      margin: 0.5rem;
+      padding: 0;
+    }
   }
 </style>
 

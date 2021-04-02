@@ -21,7 +21,7 @@
 
 <style>
   article {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     font-weight: 100;
   }
 
@@ -34,10 +34,11 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     border-spacing: 0;
-    overflow-x: auto;
     text-align: left;
     padding-bottom: 2rem;
     margin-left: 2rem;
+    width: 85%;
+    overflow: scroll;
   }
 
   article :global(td, th) {
@@ -46,11 +47,51 @@
   }
 
   article :global(blockquote) {
-    background: #f0f0f0;
-    margin: 1.5rem 10px;
-    border-left: 0.2rem solid #ccc;
+    margin: 0;
     padding: 0.5rem 10px;
+    border-left: 1px solid lightskyblue;
     font-style: oblique;
+  }
+
+  article :global(cite) {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 20vw;
+    margin-right: -22vw;
+    font-size: 14px;
+  }
+  
+  article :global(aside) {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 20vw;
+    margin-right: -22vw;
+    font-style: oblique;
+    font-size: 14px;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    article :global(aside) 
+    {
+      display: block;
+      float: none;
+      margin: 5% 10% 5% 10%;	
+      width: 80%;
+      font-size: 13px;
+    }
+    
+    article :global(cite) 
+    {
+      margin-top: 1rem;
+      display: block;
+      float: none;
+      width: 80%;
+      font-size: 13px;
+    }
   }
 </style>
 
