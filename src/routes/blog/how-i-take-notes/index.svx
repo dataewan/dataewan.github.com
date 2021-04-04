@@ -1,0 +1,194 @@
+---
+title: How I take notes
+summary:
+    Description of the tools and process I've been using to take notes.
+tags:
+    - notes
+    - writing
+---
+
+I take a lot of notes.
+Especially when I'm reading.
+I think I've always taken notes to try and avoid the feeling that what I read escaped my head as quickly as I read.
+Also notes are useful for structuring your thinking. Writing is structured thought.
+I've experimented with different ways of taking notes over the years but it never really stuck.
+The structure I've got here I've been using for about a year now, so is the longest survivor so far.
+
+1. Take fleeting notes
+2. Make the fleeting notes permanent
+3. Maintain the notes and the links between them
+4. Write and publish
+
+
+<cite>
+<a href="https://takesmartnotes.com/tools/">How to take smart notes</a>
+</cite>
+
+This structure came about after I read _How to Take Smart Notes_ by Sönke Ahrens.
+This book describes the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) method of keeping notes and making the connections between your notes.
+The implementation in the book comes from [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann).
+
+A physical Zettelkasten would be a lot of clutter.
+Software implementations are less monumental but easier to work with.
+
+<aside>A physical Zettelkasten</aside>
+
+![A physical Zettelkasten](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Zettelkasten_%28514941699%29.jpg/2560px-Zettelkasten_%28514941699%29.jpg)
+
+
+# Take fleeting notes
+
+Your _fleeting notes_ are your scribbled notes as you read.
+Capture anything you like.
+These notes don't need to be super high quality, they are ephemeral.
+This means that you do need to come back to these notes pretty quickly, while you still have the context in your head.
+
+The great part about taking these notes is that you don't have to follow any particular predetermined track.
+You just go into whatever is most interesting for you at that time.
+It doesn't feel like a chore.
+You're not just working on one idea at a time.
+
+**Reading a physical book**
+
+This is my preferred way to read a book.
+If you have a pencil and a book you can make lots of scribbles to come back to later. You can really have a conversation with the book.
+
+**Reading a book on Kindle**
+
+I use [this tool](https://github.com/dataewan/kindlenotes2md) to convert those notes to [markdown](https://en.wikipedia.org/wiki/Markdown) format.
+It is pretty easy to just do lots of highlighting and not pay attention, so this isn't my preference.
+
+**Apple notes app**
+
+For capturing anything that I want to come back to later.
+Particularly when I have a website that I want to read later, so I don't have the hundreds of tabs open that I used to.
+Have to be careful not to just have hundreds of notes instead.
+
+I like this app because it is with me most of the time, and it syncs between devices.
+I'd be open to trying other apps that let me capture fleeting notes in more situations.
+
+
+# Make fleeting notes permanent
+
+I'm not going to do this justice, read _How to Take Smart Notes_ to get a real feel for this part of the process, but you want to turn those fleeting notes into permanent notes. Here's my interpretation of this objective.
+
+> Make permanent notes. The idea is not to collect notes; but to develop ideas, arguments, and discussions. Write exactly one note for each idea and write as if you were writing for someone else. Find links between notes.
+
+In the book, this is the part where I'm carefully adding index cards into the slip-box.
+Instead of doing this, I create a new markdown file prefixed with today's date and time in the folder and write the note using my favourite text editor.
+
+I just use plain markdown syntax, nothing fancy.
+I use the markdown link syntax to link between them.
+As an example here's a summary of a chapter in the book, and includes a link to another note.
+
+```markdown
+
+1. make fleeting notes. scribbled everywhere
+2. make literature notes. when you read something make a note about the content. 
+3. make permanent notes. the idea is not to collect notes; but to develop ideas, arguments, and discussions. Write exactly one note for each idea and write as if you were writing for someone else.
+4. add the permanent notes to the slip box system
+  - file each note "behind" multiple notes, forming threads
+  - add links to related notes
+  - make sure that you're able to find this note later by adding it to the index
+5. develop topics, question, and research projects bottom up from within the system. Look in the slipbox to see where chains have formed.
+6. after a while you'll have been able to find a topic that you want to write about. bring this into your desktop and start outlining and bring things in order. Look for what's missing
+7. Turn notes into a rough draft. Translate them into something coherent
+8. Edit and proofread your document
+
+
+In reality you never just work on one idea, but you work on many at the same time.
+
+Isn't this quite cyclical process? Like the 
+[hermeneutic circle]( 202011200802-hermeneutic-circle.md )
+```
+
+I've got about 400 permanent markdown notes now in this directory, so have been making about 1-2 per day over the past year.
+
+# Maintain the connections between notes
+
+A Zettelkasten should be a living thing.
+It is a tool for structuring your thinking.
+You're meant to be looking through your box often,
+finding ideas and developing new ones.
+It is a tool for thinking and reading, and externalising that thinking.
+
+A key part of this is the connections between your notes.
+You need to be maintaining these connections.
+With a paper system this would be sitting down with the box and flicking through the cards.
+Reading, forming new connections, and sorting things out.
+
+These are the sorts of connections that would happen in a paper slipbox.
+Some of them are less relevant for a computer based system.
+
+1. Notes that give you an overview of the topic. They help you orient yourself in a topic. Could be replaced to an extent by searching and grepping notes.
+1. Notes that give you an overview of the physical cluster of the slipbox. Some visualisation of the links would be nice.
+1. Notes that say which note follows which in a chain. We use markdown hyperlinks for this, or just write longer notes since markdown has a clearly defined structure in the document with headings. I've been experimenting with both, and I'm leaning towards writing longer notes that wouldn't fit on an index card.
+1. Plain note-to-note connections. These are the most common kind. Implemented using markdown hyperlinks.
+
+I tried just working with the text files for a bit.
+Text files sitting on your computer aren't a very attractive experience to sit and play with.
+They're harder to read.
+They're less fun to browse.
+
+There's a problem to do with back-linking.
+When note A links to note B, note B doesn't know anything about this.
+Ideally I'd like to be able to navigate from B to A as there is a relationship there.
+
+So to help me stick to this new habit, I built a couple of tools to make this easier.
+
+[jottingsserve](https://github.com/dataewan/jottingsserve), a programme that you set running in your directory of markdown files.
+It then provides an API to access those files and the links between those files.
+
+[jotting-frontend](https://github.com/dataewan/jotting-frontend), provides a frontend that gives you nice reading experience,
+easier navigation between notes,
+visualisation of the nodes and links between them.
+
+<style>
+div#imageholder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#leftimage{
+    flex: 1;
+    width: 50%;
+}
+
+#rightimage{
+    flex: 1;
+    width: 50%;
+}
+
+
+@media (max-width: 768px){
+    div#imageholder{
+        display: block;
+    }
+
+    img{
+        width:80%;
+        display: block;
+        margin: auto;
+    }
+}
+</style>
+
+
+<aside>
+    How notes look in the frontend.
+</aside>
+
+<div id="imageholder">
+<img id="leftimage" src="example-article.png" alt="How an article appears in the web front end">
+<img id="rightimage" src="link-graph.png" alt="Force directed graph of all the links.">
+</div>
+
+# Write and publish
+
+One section of the book states that _Writing is the only thing that matters_.
+It is only at the point where you write stuff down and share it with the world that you've contributed anything useful.
+This doesn't mean that the previous steps aren't valuable, but they're done with the intent to write about what you've noted.
+
+I'm usually reluctant to share what I've been noting down.
+As evidenced by me not having updated my website for so long I couldn't remember how to build it.
+I needed a bit of a boot up the arse and this part of the book was helpful.
