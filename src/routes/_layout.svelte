@@ -1,3 +1,20 @@
+
+<svelte:head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTWKBNY4CM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RTWKBNY4CM', {
+      client_storage: 'none',
+    });
+  </script>
+</svelte:head>
+
+
+
 <script>
   import Nav from "../components/Nav.svelte";
   import PostHolder from "../components/PostHolder.svelte";
