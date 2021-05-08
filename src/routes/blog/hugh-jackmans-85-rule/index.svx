@@ -1,0 +1,82 @@
+---
+title: Hugh Jackman and the 85% rule
+summary:
+    The 85% rule states that you don't achieve best results by giving it your all, instead you should give only 85%. Where does this come from?
+tags:
+    - performance
+    - you need to chill
+date: 2021-05-01
+---
+
+Hugh Jackman tells a story in an interview:
+
+<cite>
+<a href="https://tim.blog/2020/06/30/hugh-jackman-transcript/">Interview with Tim Ferris</a>
+</cite>
+
+> **Hugh Jackman:** And he watched it over and over again. And he said, what he realized Carl Lewis did at the 50-meter mark, 60-meter mark, was that he did nothing. His breathing was exactly the same. His form is exactly the same as had been between meters 25 and 50. Whereas everyone else starts to push to the end, trying—"Gonna try a little extra harder!"—and he said their face would scrunch up, their jaw would tighten, their fists would start to clench. Whereas Carl Lewis stayed exactly the same and then [whooshing sound] he would just breeze past them. So that's where he invented the 85 percent rule.
+
+This is a great story.
+It feels compelling and correct.
+You shouldn't be giving it your all, instead you should be giving it 85%.
+Be more like Carl Lewis.
+
+
+I wanted to find more on the 85% rule.
+There are [other articles](https://forge.medium.com/to-do-your-best-work-use-the-85-rule-18c7f7553ee) that talk about it, but they cite the interview with Hugh Jackman as the source.
+Jackman says that it comes from a sprint coach studying Carl Lewis in video.
+Can I find out more about this 85% rule?
+
+
+# Going deeper
+
+In short, I can't find any reference for this story.
+I suspect that Hugh Jackman might have remembered a few different things, and managed to turn them into an authoritative and clear story on the spot.
+That's very impressive.
+
+<cite>
+    <a href="https://www.nature.com/articles/s41467-019-12552-4.pdf">Nature Paper</a>
+</cite> 
+The only 85% rule that I can find reference to comes from a paper in 2019 called "The Eighty Five Percent Rule for optimal learning".
+This is an interesting paper. They show using artificial neural networks that when learning a task, if you're working at a level of difficulty where you get it right 85% of the time and make a mistake 15%, this is the optimal level of difficulty for learning.
+
+This paper comes from _Nature_ and did get picked up by a few newspapers,
+so it is quite feasible that this is where the number 85% comes from.
+But this rule isn't the same as the Carl Lewis rule, which is about the level of effort that you should put in during the real event to get the best results.
+
+I found this tremendous video from Carl Lewis and coach Tom Tellez, where they analyse what is important in a sprint.
+
+<cite>
+<a href="https://www.youtube.com/watch?v=E-VcKB2RN6s">Tom Tellez and Carl Lewis on Sprinting</a>
+</cite>
+
+![Carl Lewis video](carl-lewis-speaking.png)
+
+They split the race into percentages (it isn't clear what the percentages are).
+What surprised me was that while it looks like world class sprinters leave nothing behind, at the end of the race they are actually starting to slow down.
+They are accelerating or at top speed for only 87% of the race (this is another candidate for where that 85% figure comes from).
+
+![Percentages of the race](85-rule-percentages.png)
+
+Carl Lewis was known for winning races at the end, during the maintenance or deceleration phases of the race. Here's how he described it [[source]](https://www.elitetrack.com/forums/topic/carl-lewis-interview-with-info-on-tellez-training-methods/):
+
+> "A lot of times I've been credited with being a fast finisher," Lewis says. "But it's almost an optical illusion. I'm not gaining speed. I'm just slowing down less than everyone else. That's the key. And I work hard at being able to do that."
+
+Throughout this video they repeatedly share this nugget.
+
+![The nugget](the-nugget-carl-lewis.png)
+
+> The best way to get passed at 90 meters is to hit top speed at 40.
+
+This is the theme that Hugh Jackman told us about.
+To get the best results, you don't always want to put in 100%.
+Or even worse, to give it the footballer's percentage 110%.
+Sometimes it is better to relax a bit and keep something in reserve.
+
+# Why is hard acceleration not the right approach?
+
+# Takeaways
+
+- Sometimes it is better to relax a bit and keep something in reserve.
+- Be careful of accelerating hard at the start of a project. It can feel more productive than it really is.
+- Hugh Jackman is a wonderful and compelling storyteller. Especially if he managed to make the 85% rule up on the spot.
