@@ -75,6 +75,27 @@ Sometimes it is better to relax a bit and keep something in reserve.
 
 # Why is hard acceleration not the right approach?
 
+https://www.brunel.ac.uk/~spstnpl/LearningResources/SprintingLab.pdf
+
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4415826/pdf/jhk-45-135.pdf
+
+
+https://journals.sagepub.com/doi/pdf/10.1260/1747-9541.6.3.479
+
+
+https://www.espn.com/espn/feature/story/_/id/17277615/perfect-100-meters-how-run-olympics-fastest-event-right-way
+
+# Why is 85% roughly the right number
+
+5 day week rather than 6
+
+8 hour day rather than 10
+
+The munitions example
+
+All come out to around 85%
+
 # Takeaways
 
 - Sometimes it is better to relax a bit and keep something in reserve.
