@@ -9,6 +9,7 @@
   I'm a data scientist.
   I've got years of experience leading teams, and being elbow deep in the wrong end of a SQL query.
   I live in Scotland.
+  As well as being a data scientist, I'm a coach.
 </p>
 
 <p>

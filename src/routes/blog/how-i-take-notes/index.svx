@@ -5,6 +5,7 @@ summary:
 tags:
     - notes
     - writing
+date: 2021-04-04
 ---
 
 I take a lot of notes.
