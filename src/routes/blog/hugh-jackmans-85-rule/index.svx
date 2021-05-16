@@ -1,0 +1,158 @@
+---
+title: Hugh Jackman and the 85% rule
+summary:
+    The 85% rule states that you don't achieve best results by giving it your all, instead you should give only 85%. Where does this come from?
+tags:
+    - performance
+    - you need to chill
+date: 2021-05-16
+---
+
+In an interview Hugh Jackman tells this story about Carl Lewis and what he calls the _85% rule_:
+
+<cite>
+<a href="https://tim.blog/2020/06/30/hugh-jackman-transcript/">Interview with Tim Ferris</a>
+</cite>
+
+> **Hugh Jackman:** And he watched it over and over again. And he said, what he realized Carl Lewis did at the 50-meter mark, 60-meter mark, was that he did nothing. His breathing was exactly the same. His form is exactly the same as had been between meters 25 and 50. Whereas everyone else starts to push to the end, trying—"Gonna try a little extra harder!"—and he said their face would scrunch up, their jaw would tighten, their fists would start to clench. Whereas Carl Lewis stayed exactly the same and then [whooshing sound] he would just breeze past them. So that's where he invented the 85 percent rule.
+
+Isn't this a great story?
+It feels compelling. 
+It feels like it is giving you a deep insight.
+To achieve the best performance you shouldn't be giving it your all, instead you should be giving it 85%.
+Be more like Carl Lewis. 
+Relax and maintain your energy.
+
+I wanted to find out more about the 85% rule.
+Where does it come from? What evidence is there for 85% being the right number?
+There are [other articles](https://forge.medium.com/to-do-your-best-work-use-the-85-rule-18c7f7553ee) that talk about the 85% rule, but they all cite the interview with Hugh Jackman as the original source.
+Jackman says that it comes from a sprint coach who studied Carl Lewis in slow-motion video.
+I thought I'd be able to find out more quite easily online.
+
+I was wrong.
+I spent far too much time looking into this.
+Even with a fair amount of research I can't find any references that told me about the 85% rule.
+I suspect that Hugh Jackman might have remembered a few different things, and managed to turn them into this authoritative and clear story on the spot.
+I'm very impressed if that's what happened!
+
+Even though I couldn't find any references for the 85% rule this was a productive rabbit hole to disappear down.
+I found interesting references and learned a lot about sprinting.
+
+# 85% rule for optimal learning
+
+<cite>
+    <a href="https://www.nature.com/articles/s41467-019-12552-4.pdf">Nature Paper</a>
+</cite> 
+The only 85% rule that I can find reference to comes from a paper in 2019 called "The Eighty Five Percent Rule for optimal learning".
+They show using artificial neural networks that when learning a task, if you're working at a level of difficulty where you get it right 85% of the time and get it wrong 15% of the time, this is the optimal level of difficulty for learning quickly.
+
+This paper comes from _Nature_ and did get picked up in the media,
+so it is feasible that this is where that 85% figure comes from.
+
+But this isn't the same as the rule that Hugh Jackman talks about.
+This paper says that you should be pushing past your current level of ability by 15% to learn quickly.
+Jackman's rule says that you should be conserving 15% of your energy for later.
+This isn't the 85% rule we're looking for.
+
+# Tom Tellez and Carl Lewis on sprinting.
+
+I then tried to find the slow-motion video analysis of Carl Lewis from a sprinting coach.
+There's this tremendous video from Carl Lewis and sprint coach Tom Tellez where they analyse what is important in a sprint.
+I've not sprinted since high school and I certainly wasn't very good then.
+Watching this technical analysis of sprinting from some world class instructors gives you a nice feeling of being well informed.
+
+<cite>
+<a href="https://www.youtube.com/watch?v=E-VcKB2RN6s">Tom Tellez and Carl Lewis on Sprinting</a>
+</cite>
+
+![Carl Lewis video](carl-lewis-speaking.png)
+
+They split the race into these percentages.
+I'm not clear what these percentages correspond to but they might be the contribution of each segment of the sprint to the overall time.
+What surprised me was that while it looks like world class sprinters are going flat out for the whole race, at the end of the race they are actually starting to slow down.
+They are accelerating or at top speed for only the first 87% of the race.
+I guess this is another candidate for where that 85% figure comes from.
+
+![Percentages of the race](85-rule-percentages.png)
+
+Carl Lewis was known for winning sprints in the final stretch, during the maintenance or deceleration phases of the race. Here's how he described it [[source]](https://www.elitetrack.com/forums/topic/carl-lewis-interview-with-info-on-tellez-training-methods/):
+
+> "A lot of times I've been credited with being a fast finisher," Lewis says. "But it's almost an optical illusion. I'm not gaining speed. I'm just slowing down less than everyone else. That's the key. And I work hard at being able to do that."
+
+An optical illusion. He wasn't really speeding up, he was just slowing down less than everyone else.
+
+Throughout this video they repeatedly share this nugget.
+
+![The nugget](the-nugget-carl-lewis.png)
+
+> The best way to get passed at 90 meters is to hit top speed at 40.
+
+What they're saying here is that if you are running at full speed earlier in the race than other people,
+you'll end up getting passed by them in the final 10 metres.
+
+I think that this is spirit of the message that Hugh Jackman was telling us about.
+To get the best results you don't always want to put in 100%.
+Or even worse, the footballer's percentage of giving it 110%.
+Sometimes it is better to relax a bit and keep some energy in reserve.
+
+# Why is hard acceleration not the right approach?
+
+Intuitively this feels good.
+But why is hard acceleration not the right approach?
+
+This plot shows the velocity of some prominent men's 100m sprinters.
+You can see that the maximum velocity is at about 60m (rather than 40m), and then they gradually slow down towards the 100m line.
+This is the nugget that we heard before.
+
+<cite>
+https://journals.sagepub.com/doi/pdf/10.1260/1747-9541.6.3.479
+</cite>
+
+![velocity of sprinters over 100m](sprinter-100m-plot.png)
+
+<cite>
+<a href="https://www.researchgate.net/publication/11406394_Modeling_the_energetics_of_100-m_running_by_using_speed_curves_of_world_champions">Modelling the energetics of the 100m</a>
+</cite>
+
+Why does this effect happen?
+In _Modelling the energetics of the 100m_ they produce a model that explains some reasons why this velocity curve looks the way it does.
+They created a pretty complex model, considering a lot of factors like wind resistance, how efficient the sprinters are, air density and pressure.
+If you really simplify the model there are a couple of factors that stand out.
+
+First to accelerate you need to convert energy stored in your body into kinetic energy.
+The formula for kinetic energy is _½mv²_, where _m_ is the mass of the object in kilograms, and _v²_ is the velocity of the object squared.
+Since it is the square of the velocity if you are going faster it is harder for you to accelerate --- you need to add even more energy.
+Let's do an example.
+To accelerate a 75kg athlete from 9 metres per second to 10 metres per second requires _712.5 J_ of energy.
+To accelerate from 5 to 6 metres per second only takes _412.5 J_.
+Even though they're both only an increase of 1 metre per second if you're going faster it requires more energy.
+To keep accelerating would require a huge amount of energy to be released from your body.
+
+The second factor is that your body has different systems that release energy and they have different purposes.
+There are aerobic and anaerobic systems.
+The anaerobic [ATP-PC](https://en.wikipedia.org/wiki/Bioenergetic_systems#ATP%E2%80%93CP:_the_phosphagen_system) system is the dominant one in the 100m sprint.
+This system is able to release large amounts of energy rapidly,
+but it is completely depleted shortly after the 10 seconds of an elite 100m sprint.
+After this your body turns to the longer endurance aerobic systems, which produce less power.
+As your anaerobic power runs out you can only maintain that top speed, rather than providing those explosive bursts of energy that would be required to increase your speed.
+
+I've tried creating a simple simulator that shows these factors.
+It isn't perfect -- I can't recreate Carl Lewis' nugget exactly -- but it shows you that accelerating too quickly or too slowly will lead you to lose the race.
+There's a middle ground where you're trying hard but keeping some of your energy in reserve.
+
+<script>
+import SprinterSimulator from "./SprinterSimulator.svelte"
+</script>
+
+<SprinterSimulator />
+
+# Reflections
+
+What should I bear in mind from this research?
+
+Don't think about 100% as the amount of effort you should be putting in. Going as fast as you can will sometimes cause you to peak to soon and not have enough to complete the project. 85% doesn't seem to have any scientific reason behind it but it is a number that feels intuitive and easy to remember.
+
+Be careful of accelerating hard at the start of a project. It can feel really productive but that feeling is often misleading. Pay particular attention to acceleration that takes a lot of energy out of you that you might need later.
+
+Hugh Jackman is a wonderful and compelling storyteller. 
+Especially if he managed to make the 85% rule up on the spot.
