@@ -75,29 +75,51 @@ Sometimes it is better to relax a bit and keep something in reserve.
 
 # Why is hard acceleration not the right approach?
 
-https://www.brunel.ac.uk/~spstnpl/LearningResources/SprintingLab.pdf
+This plot shows the velocity of some prominent men's 100m sprinters.
+You can see that the maximum velocity is at about 60m, and then they slow down towards the 100m line.
 
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4415826/pdf/jhk-45-135.pdf
-
-
+<cite>
 https://journals.sagepub.com/doi/pdf/10.1260/1747-9541.6.3.479
+</cite>
 
+![velocity of sprinters over 100m](sprinter-100m-plot.png)
 
-https://www.espn.com/espn/feature/story/_/id/17277615/perfect-100-meters-how-run-olympics-fastest-event-right-way
+<cite>
+<a href="https://www.researchgate.net/publication/11406394_Modeling_the_energetics_of_100-m_running_by_using_speed_curves_of_world_champions">Modelling the energetics of the 100m</a>
+</cite>
 
-# Why is 85% roughly the right number
+Why this happens?
+In _Modelling the energetics of the 100m_ they produce a model that tries to explain this.
+It is a complex model, considering a lot of factors like wind resistance, how efficient the sprinters are, air density and pressure.
+If you really simplify the model there are a couple of factors that stand out.
 
-5 day week rather than 6
+First to accelerate you need to convert energy stored in your body into kinetic energy.
+The formula for kinetic energy is _½mv²_, where _m_ is the mass of the object in kilograms, and _v²_ is the velocity squared.
+Since it is the square of the velocity, if you are going faster it is harder for you to accelerate --- you need to add more energy.
+For example, to accelerate a 75kg athlete from 9 metres per second to 10 metres per second requires _712.5 J_ of energy.
+To accelerate from 5 to 6 metres per second only takes _412.5 J_.
+To keep accelerating would require a huge amount of energy to be released from your body.
 
-8 hour day rather than 10
+The second factor is that your body has different systems for releasing energy.
+There are aerobic and anaerobic systems.
+The anaerobic ATP-PC system is dominant in the 100m sprint.
+This system is able to release large amounts of energy very rapidly,
+but it is completely depleted shortly after the 10 seconds of an elite 100m sprint.
+After this your body turns to the longer endurance aerobic systems, which produce less power.
+As your anaerobic power runs out you can only maintain that top speed, rather than increasing it.
 
-The munitions example
+I've tried creating a simple simulator that shows these factors.
+It isn't perfect, I can't recreate Carl Lewis' nugget, but it shows you that accelerating too quickly or too slowly will lead you to lose the race.
 
-All come out to around 85%
+<script>
+import SprinterSimulator from "./SprinterSimulator.svelte"
+</script>
+
+<SprinterSimulator />
+
 
 # Takeaways
 
-- Sometimes it is better to relax a bit and keep something in reserve.
-- Be careful of accelerating hard at the start of a project. It can feel more productive than it really is.
+- Don't think about 100% as the amount of effort you should be putting in. Going as fast as you can will sometimes cause you to peak to soon and not have enough to complete the project.
+- Be careful of accelerating hard at the start of a project. It can feel really productive, but that feeling is often misleading. Pay particular attention to acceleration that takes a lot of energy out of you.
 - Hugh Jackman is a wonderful and compelling storyteller. Especially if he managed to make the 85% rule up on the spot.
