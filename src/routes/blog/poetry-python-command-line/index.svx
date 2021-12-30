@@ -28,19 +28,20 @@ Add a section in your `pyproject.toml` file.
 kindlenotes2md = "kindlenotes2md.notes:cli"
 ```
 
-There are 4 important parts to this example line.
+There are 4 important parts to this line.
 
 `kindlenotes2md` for the first time is the name of the executable script, so what you'll be typing in on the command line.
 
 `kindlenotes2md` for the second time is the name of the module.
+They don't need to be called the same thing.
 
 `notes` is the name of the python file in the module that contains the function that you'll use as the entry point to your application.
 
-`cli` is the name of the function that you'll call.
+`cli` is the name of the function that you'll call when typing the command line.
 
 # Make the function for the command line application
 
-If I run a `poetry shell` first to set everything up, the function `cli` will be run when I run `kindlenotes2md` in my command line.
+If I run `poetry shell` first to set a virtual environment up, the function `cli` will be run when I run `kindlenotes2md` in my command line.
 To make this useful, use click decorators to pass parameters into the function from the command line.
 
 ```python
@@ -68,7 +69,7 @@ def cli(inputfilename, outfilename):
 
 
 Click provides the `CliRunner`, which lets you run commands as command line scripts.
-You use this in your unit tests.
+You use this in your `pytest` unit tests.
 This test tests what happens if the file isn't found (exit code 1), and when it runs successfully.
 
 ```python
