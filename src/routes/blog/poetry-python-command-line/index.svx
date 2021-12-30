@@ -1,0 +1,88 @@
+---
+title: Using Poetry and Click to create a command line application
+tags:
+    - poetry python
+---
+
+[Poetry](https://python-poetry.org/) makes packaging a Python application easy.
+[Click](https://click.palletsprojects.com/) makes it easy to create command line applications in Python.
+How can these two tools be used together?
+
+<cite>
+<a href="https://github.com/dataewan/kindlenotes2md">kindlenotes2md</a>
+</cite>
+
+I've used this pattern in the tool `kindlenotes2md` if you want to see a working example.
+Here I'm just going to talk about the most important points.
+I assume that you've already got a poetry project up and running,
+either by running `poetry new` to create a new project, or by `poetry init` in an existing one.
+
+Now create a command line application from your code.
+
+# Make an entry point in your pyproject.toml
+
+Add a section in your `pyproject.toml` file.
+
+```toml
+[tool.poetry.scripts]
+kindlenotes2md = "kindlenotes2md.notes:cli"
+```
+
+There are 4 important parts to this line.
+
+`kindlenotes2md` for the first time is the name of the executable script, so what you'll be typing in on the command line.
+
+`kindlenotes2md` for the second time is the name of the module.
+They don't need to be called the same thing.
+
+`notes` is the name of the python file in the module that contains the function that you'll use as the entry point to your application.
+
+`cli` is the name of the function that you'll call when typing the command line.
+
+# Make the function for the command line application
+
+If I run `poetry shell` first to set a virtual environment up, the function `cli` will be run when I run `kindlenotes2md` in my command line.
+To make this useful, use click decorators to pass parameters into the function from the command line.
+
+```python
+import click
+
+@click.command()
+@click.argument("inputfilename")
+@click.option("-o", "--outfilename", default=None)
+def cli(inputfilename, outfilename):
+    checkfile(inputfilename)
+    contents = read_file(inputfilename)
+    book_notes = parse_contents(contents)
+    markdown = md_output(book=book_notes)
+    if outfilename is None:
+        print(markdown)
+    else:
+        save_to_file(markdown, outfilename)
+```
+
+# How to unit test?
+
+<aside>
+<a href="https://click.palletsprojects.com/en/8.0.x/testing/">Click testing</a>
+</aside>
+
+
+Click provides the `CliRunner`, which lets you run commands as command line scripts.
+You use this in your `pytest` unit tests.
+This test tests what happens if the file isn't found (exit code 1), and when it runs successfully.
+
+```python
+from click.testing import CliRunner
+
+from kindlenotes2md import notes
+
+def test_cli():
+    runner = CliRunner()
+    result = runner.invoke(notes.cli, "notexist.html")
+    assert result.exit_code == 1
+    result = runner.invoke(notes.cli, "tests/test_data.html")
+    assert result.exit_code == 0
+```
+
+
